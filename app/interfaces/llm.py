@@ -35,5 +35,13 @@ class LLMInterface(ABC):
         pass
 
     @abstractmethod
+    def bind_tools(self, tools: list[Any]) -> None:
+        pass
+
+    @abstractmethod
+    def with_structured_output(self, *args: Any, **kwargs: Any) -> Any:
+        pass
+
+    @abstractmethod
     def __repr__(self) -> str:
         pass
