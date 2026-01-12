@@ -15,6 +15,7 @@ class Settings(BaseSettings):
     LOG_LEVEL: str = "INFO"
 
     # Database (variables usadas no adapter)
+    DATABASE_PROVIDER: str = "postgres"
     PSQL_USERNAME_MEMORY: str
     PSQL_PASSWORD_MEMORY: str
     PSQL_HOST_MEMORY: str
